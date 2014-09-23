@@ -1,0 +1,30 @@
+#=================================================================================================
+#
+#  Copyright (c) 2013,
+#  National Instruments Corporation.
+#  All rights reserved.
+#
+#==================================================================================================
+
+component collatz
+{
+   name = "Measurement Studio utility for changing the modified date on help related files.";
+   documentationURL = "";
+
+   # Target type - Choose from distribution, dynamiclib, installer, nativedriver, program, source, versioned-source, staticlib, other
+   type = program;
+
+   version = 1.0.0d0;
+
+   # List dependencies here to indicate what this component needs to build
+   dependencies = "nibuild";
+}
+
+
+# =========================
+#  Build Dependencies
+# =========================
+dependency nibuild
+{
+	perforcePath = perforce://build/nibuild/export/14.1/14.1.0f4;
+}
